@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_4cLbYLnQEeioF-iGaM1Mlw" name="MagiWorld">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_4knlsLnQEeioF-iGaM1Mlw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iXB10LpXEei2re9PLMNG4w" name="MagiWorld">
+      <packagedElement xmi:type="uml:Package" xmi:id="_iYxiQLpXEei2re9PLMNG4w" name="com">
+        <packagedElement xmi:type="uml:Package" xmi:id="_iYzXcLpXEei2re9PLMNG4w" name="jjaurensan">
+          <packagedElement xmi:type="uml:Class" xmi:id="_iY1MoLpXEei2re9PLMNG4w" name="GameCharacter" visibility="public">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iZLK4LpXEei2re9PLMNG4w" name="level" visibility="private" isUnique="false">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iZNAELpXEei2re9PLMNG4w" name="life" visibility="private" isUnique="false">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iZNnILpXEei2re9PLMNG4w" name="force" visibility="private" isUnique="false">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iZOOMLpXEei2re9PLMNG4w" name="agility" visibility="private" isUnique="false">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iZOOMbpXEei2re9PLMNG4w" name="intelligence" visibility="private" isUnique="false">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ifGzwLpXEei2re9PLMNG4w" name="GameCharacter" specification="_iZO1QLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    this.level = level;
+    this.force = force;
+    this.agility = agility;
+    this.intelligence = intelligence;
+    this.life = level * 5;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ifM6YLpXEei2re9PLMNG4w" name="attack" specification="_ifMTULpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+//Basic attack
+//Special attack
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ifTBALpXEei2re9PLMNG4w" name="getLevel" specification="_ifPWoLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    return level;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ifZHoLpXEei2re9PLMNG4w" name="setLevel" specification="_ifVdQLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    this.level = level;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ifkt0LpXEei2re9PLMNG4w" name="getLife" specification="_ifgcYLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    return life;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ifyJMLpXEei2re9PLMNG4w" name="setLife" specification="_ifrbgLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    this.life = life;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_if1MgLpXEei2re9PLMNG4w" name="getForce" specification="_ifz-YLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    return force;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_if_kkLpXEei2re9PLMNG4w" name="setForce" specification="_if9vYLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    this.force = force;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_igFrMLpXEei2re9PLMNG4w" name="getAgility" specification="_igCA0LpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    return agility;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_igOOELpXEei2re9PLMNG4w" name="setAgility" specification="_igKjsLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    this.agility = agility;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_igQDQLpXEei2re9PLMNG4w" name="getIntelligence" specification="_igO1ILpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    return intelligence;
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_igTtoLpXEei2re9PLMNG4w" name="setIntelligence" specification="_igRRYLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    this.intelligence = intelligence;
+</body>
+            </ownedBehavior>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_iZO1QLpXEei2re9PLMNG4w" name="GameCharacter" visibility="public" method="_ifGzwLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ie9p0LpXEei2re9PLMNG4w" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ie-38LpXEei2re9PLMNG4w" name="force">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ifAGELpXEei2re9PLMNG4w" name="agility">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ifCiULpXEei2re9PLMNG4w" name="intelligence">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ifMTULpXEei2re9PLMNG4w" name="attack" visibility="public" method="_ifM6YLpXEei2re9PLMNG4w"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ifPWoLpXEei2re9PLMNG4w" name="getLevel" visibility="public" method="_ifTBALpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ifRL0LpXEei2re9PLMNG4w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ifVdQLpXEei2re9PLMNG4w" name="setLevel" visibility="public" method="_ifZHoLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ifWEULpXEei2re9PLMNG4w" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ifgcYLpXEei2re9PLMNG4w" name="getLife" visibility="public" method="_ifkt0LpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ifjfsLpXEei2re9PLMNG4w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ifrbgLpXEei2re9PLMNG4w" name="setLife" visibility="public" method="_ifyJMLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ifspoLpXEei2re9PLMNG4w" name="life">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ifz-YLpXEei2re9PLMNG4w" name="getForce" visibility="public" method="_if1MgLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_if0lcLpXEei2re9PLMNG4w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_if9vYLpXEei2re9PLMNG4w" name="setForce" visibility="public" method="_if_kkLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_if-9gLpXEei2re9PLMNG4w" name="force">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_igCA0LpXEei2re9PLMNG4w" name="getAgility" visibility="public" method="_igFrMLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_igDO8LpXEei2re9PLMNG4w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_igKjsLpXEei2re9PLMNG4w" name="setAgility" visibility="public" method="_igOOELpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_igLx0LpXEei2re9PLMNG4w" name="agility">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_igO1ILpXEei2re9PLMNG4w" name="getIntelligence" visibility="public" method="_igQDQLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_igPcMLpXEei2re9PLMNG4w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_igRRYLpXEei2re9PLMNG4w" name="setIntelligence" visibility="public" method="_igTtoLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_igSfgLpXEei2re9PLMNG4w" name="intelligence">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_igX_ELpXEei2re9PLMNG4w" name="Main" visibility="public">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_igqS8LpXEei2re9PLMNG4w" name="main" specification="_igkzYLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+// TODO Auto-generated method stub
+</body>
+            </ownedBehavior>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_igkzYLpXEei2re9PLMNG4w" name="main" visibility="public" isStatic="true" method="_igqS8LpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ignPoLpXEei2re9PLMNG4w" name="args" type="_igc3kLpXEei2re9PLMNG4w">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_igodwLpXEei2re9PLMNG4w"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_igpE0LpXEei2re9PLMNG4w" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_igtWQLpXEei2re9PLMNG4w" name="Player" visibility="public">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_igukYLpXEei2re9PLMNG4w" name="gameCharacter" visibility="private" type="_iY1MoLpXEei2re9PLMNG4w" isUnique="false"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_igyOwLpXEei2re9PLMNG4w" name="indexPlayer" visibility="private" isUnique="false">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ig7_wLpXEei2re9PLMNG4w" name="Player" specification="_ig0rALpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+</body>
+            </ownedBehavior>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ig0rALpXEei2re9PLMNG4w" name="Player" visibility="public" method="_ig7_wLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ig6xoLpXEei2re9PLMNG4w" name="indexPlayer">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ihFJsLpXEei2re9PLMNG4w" name="Prowler" visibility="public">
+            <generalization xmi:type="uml:Generalization" xmi:id="_ihINALpXEei2re9PLMNG4w" general="_iY1MoLpXEei2re9PLMNG4w"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ihZSwLpXEei2re9PLMNG4w" name="Prowler" specification="_ihMecLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    super(level, force, agility, intelligence);
+// TODO Auto-generated constructor stub
+</body>
+            </ownedBehavior>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ihMecLpXEei2re9PLMNG4w" name="Prowler" visibility="public" method="_ihZSwLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihR-ALpXEei2re9PLMNG4w" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihTzMLpXEei2re9PLMNG4w" name="force">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihVBULpXEei2re9PLMNG4w" name="agility">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihXdkLpXEei2re9PLMNG4w" name="intelligence">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ihcWELpXEei2re9PLMNG4w" name="Warrior" visibility="public">
+            <generalization xmi:type="uml:Generalization" xmi:id="_ihc9ILpXEei2re9PLMNG4w" general="_iY1MoLpXEei2re9PLMNG4w"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ihojULpXEei2re9PLMNG4w" name="Warrior" specification="_iheLQLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    super(level, force, agility, intelligence);
+// TODO Auto-generated constructor stub
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ihrmoLpXEei2re9PLMNG4w" name="attack" specification="_ihqYgLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    // TODO Auto-generated method stub
+    super.attack();
+</body>
+            </ownedBehavior>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_iheLQLpXEei2re9PLMNG4w" name="Warrior" visibility="public" method="_ihojULpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihkR4LpXEei2re9PLMNG4w" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihlgALpXEei2re9PLMNG4w" name="force">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihmHELpXEei2re9PLMNG4w" name="agility">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ihnVMLpXEei2re9PLMNG4w" name="intelligence">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ihqYgLpXEei2re9PLMNG4w" name="attack" visibility="public" method="_ihrmoLpXEei2re9PLMNG4w"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ihup8LpXEei2re9PLMNG4w" name="Wizard" visibility="public">
+            <generalization xmi:type="uml:Generalization" xmi:id="_ihv4ELpXEei2re9PLMNG4w" general="_iY1MoLpXEei2re9PLMNG4w"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ih-hkLpXEei2re9PLMNG4w" name="Wizard" specification="_ihxGMLpXEei2re9PLMNG4w">
+              <language>JAVA</language>
+              <body>
+    super(level, force, agility, intelligence);
+// TODO Auto-generated constructor stub
+</body>
+            </ownedBehavior>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ihxGMLpXEei2re9PLMNG4w" name="Wizard" visibility="public" method="_ih-hkLpXEei2re9PLMNG4w">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ih2lwLpXEei2re9PLMNG4w" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ih7eQLpXEei2re9PLMNG4w" name="force">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ih8sYLpXEei2re9PLMNG4w" name="agility">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ih9TcLpXEei2re9PLMNG4w" name="intelligence">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_igabULpXEei2re9PLMNG4w" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_igbpcLpXEei2re9PLMNG4w" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_igcQgLpXEei2re9PLMNG4w" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_igc3kLpXEei2re9PLMNG4w" name="String"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iYLFULpXEei2re9PLMNG4w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iYLsYLpXEei2re9PLMNG4w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iYkG4LpXEei2re9PLMNG4w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iYl8ELpXEei2re9PLMNG4w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_iYpmcLpXEei2re9PLMNG4w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iYq0kLpXEei2re9PLMNG4w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_ie5_cLpXEei2re9PLMNG4w" base_BehavioralFeature="_iZO1QLpXEei2re9PLMNG4w"/>
+  <PapyrusJava:External xmi:id="_igi-MLpXEei2re9PLMNG4w" name="java.lang.String" base_Classifier="_igc3kLpXEei2re9PLMNG4w"/>
+  <standard:Create xmi:id="_ig5jgLpXEei2re9PLMNG4w" base_BehavioralFeature="_ig0rALpXEei2re9PLMNG4w"/>
+  <standard:Create xmi:id="_ihQv4LpXEei2re9PLMNG4w" base_BehavioralFeature="_ihMecLpXEei2re9PLMNG4w"/>
+  <standard:Create xmi:id="_ihicsLpXEei2re9PLMNG4w" base_BehavioralFeature="_iheLQLpXEei2re9PLMNG4w"/>
+  <standard:Create xmi:id="_ih0wkLpXEei2re9PLMNG4w" base_BehavioralFeature="_ihxGMLpXEei2re9PLMNG4w"/>
+</xmi:XMI>
