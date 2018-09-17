@@ -11,5 +11,6 @@ public class Warrior extends GameCharacter{
 	public void attack() {
 		// TODO Auto-generated method stub
 		super.attack();
+		System.out.println("hahaha");
 	}
 }

@@ -16,6 +16,8 @@ public class GameCharacter {
 		
 	}
 	
+	
+	
 	public void attack() {
 		//Basic attack
 		//Special attack
