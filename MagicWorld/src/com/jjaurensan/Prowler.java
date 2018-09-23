@@ -7,20 +7,15 @@ public class Prowler extends GameCharacter {
 	}
 
 	@Override
-	public void basicAttack(Player playerOne, Player playerTwo) {
-		// TODO Auto-generated method stub
-		
+	public void basicAttack() {
+		// Tir à l’Arc : Effectue des dommages égaux à l’agilité du joueur sur l’adversaire.
 		
 	}
 
 	@Override
-	public void specialAttack(Player playerOne, Player playerTwo) {
-		// TODO Auto-generated method stub
+	public void specialAttack() {
+		// Concentration : Le joueur gagne son niveau divisé par 2 en agilité.
 		
 	}
-
-	
-
-	
 
 }

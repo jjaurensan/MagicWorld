@@ -1,11 +1,15 @@
 package com.jjaurensan;
 
 abstract class GameCharacter {
-	private int level;
-	private int life;
-	private int force;
-	private int agility;
-	private int intelligence;
+	
+	private int level; //Niveau : choisi par le joueur (min 1, max 100)
+	private int life; //Vie : égale au niveau du joueur * 5
+	private int force; //Force : choisie par le joueur (min 0, max 100)
+	private int agility; //Agilité : choisie par le joueur (min 0, max 100)
+	private int intelligence; //Intelligence : choisie par le joueur (min 0, max 100)
+	
+//Attention le total force + agilité + intelligence doit être égal au niveau du joueur.
+	
 	
 	public GameCharacter(Integer level,Integer force, Integer agility, Integer intelligence) {
 		this.level=level;
@@ -15,50 +19,13 @@ abstract class GameCharacter {
 		this.life=level*5;
 		
 	}
+		
 	
+// Methodes d'attaques
 	
+	public abstract void basicAttack();
 	
-	public abstract void basicAttack(Player playerOne, Player playerTwo);
+	public abstract void specialAttack();
 	
-	public abstract void specialAttack(Player playerOne, Player playerTwo);
-	
-	public int getLevel() {
-		return level;
-	}
 
-	public void setLevel(int level) {
-		this.level = level;
-	}
-
-	public int getLife() {
-		return life;
-	}
-
-	public void setLife(int life) {
-		this.life = life;
-	}
-
-	public int getForce() {
-		return force;
-	}
-
-	public void setForce(int force) {
-		this.force = force;
-	}
-
-	public int getAgility() {
-		return agility;
-	}
-
-	public void setAgility(int agility) {
-		this.agility = agility;
-	}
-
-	public int getIntelligence() {
-		return intelligence;
-	}
-
-	public void setIntelligence(int intelligence) {
-		this.intelligence = intelligence;
-	};
 }

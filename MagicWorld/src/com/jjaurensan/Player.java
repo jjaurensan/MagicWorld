@@ -3,11 +3,11 @@ package com.jjaurensan;
 import java.util.Scanner;
 
 public class Player {
+// ---------- AVANT REMISE A ZERO ------------	
+	/*
 	Scanner sc = new Scanner(System.in);
 			
-	/**
-     * Display all available character in the game.
-     */
+	
 	public void displayAvailableCharacter()
 	{
 		System.out.println("Veuillez choisir la classe de votre personnage(1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
@@ -48,6 +48,6 @@ public class Player {
 		System.out.println("Intelligence du perso");
 		int intelligence = sc.nextInt();
 }	
-	
-	
+*/	
+	// ---------- AVANT REMISE A ZERO ------------		
 }

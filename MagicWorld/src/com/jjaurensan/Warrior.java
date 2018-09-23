@@ -8,9 +8,17 @@ public class Warrior extends GameCharacter{
 	}
 
 	@Override
-	public void attack() {
-		// TODO Auto-generated method stub
-		System.out.println("hahaha");
+	public void basicAttack() {
+		// Coup d’Épée : Effectue des dommages égaux à la force du joueur sur l’adversaire.
+		
 	}
+
+	@Override
+	public void specialAttack() {
+		// Coup de Rage : Effectue des dommages égaux à la force du joueur fois deux sur l’adversaire. 
+		//Le joueur lançant l'attaque perd de la vitalité : la valeur de sa force divisée par 2
+		
+	}
+
 	
 }
