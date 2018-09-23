@@ -1,6 +1,6 @@
 package com.jjaurensan;
 
-public class GameCharacter {
+abstract class GameCharacter {
 	private int level;
 	private int life;
 	private int force;
@@ -18,11 +18,10 @@ public class GameCharacter {
 	
 	
 	
-	public void attack() {
-		//Basic attack
-		//Special attack
-	}
-
+	public abstract void basicAttack(Player playerOne, Player playerTwo);
+	
+	public abstract void specialAttack(Player playerOne, Player playerTwo);
+	
 	public int getLevel() {
 		return level;
 	}

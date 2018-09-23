@@ -6,11 +6,11 @@ public class Warrior extends GameCharacter{
 		super(level, force, agility, intelligence);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	@Override
 	public void attack() {
 		// TODO Auto-generated method stub
-		super.attack();
 		System.out.println("hahaha");
 	}
+	
 }
