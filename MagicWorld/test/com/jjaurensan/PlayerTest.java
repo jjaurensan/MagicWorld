@@ -10,6 +10,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class PlayerTest {
+	
+	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
+    @BeforeEach
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outContent));
+    }
 /*
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
@@ -49,4 +56,12 @@ class PlayerTest {
 		
 	}
 */
+	Player player = new Player();
+	
+	@Test
+	public void Given_NampePlayer_When_DisplayAvailableCharacterChoice_Then_DisplayFirstLine() {
+		player.setPlayerName("Joueur 1");
+		player.displayAvailableCharacterChoice();
+		assertEquals("Création du personnage du Joueur 1 /nVeuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)\n", outContent.toString().replace("\r\n", "\n"));		
+	}
 }
