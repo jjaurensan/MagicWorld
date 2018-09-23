@@ -11,12 +11,16 @@ public class Player {
 	private int playerForce;
 	private int playerAgility;
 	private int playerIntelligence;
-	
+	/**
+	 * display Character choice
+	 */
 	public void displayAvailableCharacterChoice() {
 		System.out.println("Création du personnage du "+ this.playerName 
 				+" /nVeuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
 		}
-	
+	/**
+	 * create a new player character
+	 */
 	public void createNewCharacter() {
 		this.displayAvailableCharacterChoice();
 		int playerChoice;		
