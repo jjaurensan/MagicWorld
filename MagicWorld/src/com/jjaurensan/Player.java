@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Player {
 	private String playerName;
+	private Player enemy;
 	
 	
 	public void displayAvailableCharacterChoice() {
@@ -17,10 +18,17 @@ public class Player {
 		private int agility; //Agilité : choisie par le joueur (min 0, max 100)
 		private int intelligence; //Intelligence : choisie par le joueur (min 0, max 100)
 		*/
+		
+		//Attention le total force + agilité + intelligence doit être égal au niveau du joueur.
 	}
 
 	public void displayCharacterCreationConfirmation() {
 		//"CRI DE GUERRE" je suis le "TYPE PERSO" "JOUEUR" niveau XX je possede XX de vitalité, XX de force, XX d'agilité et XX d'intelligence !
+	}
+	
+	public void displayChooseAttack(Player enemy) {
+		this.enemy = enemy;
+		//"JOUEUR" ("LIFE") veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)
 	}
 	
 	public String getPlayerName() {
