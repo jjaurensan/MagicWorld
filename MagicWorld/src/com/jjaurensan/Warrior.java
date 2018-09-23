@@ -7,7 +7,8 @@ public class Warrior extends GameCharacter{
 	public Warrior(Integer level, Integer force, Integer agility, Integer intelligence) {
 		super(level, force, agility, intelligence);
 		// TODO Auto-generated constructor stub
-		
+		this.setTypeCharacter("Guerrier");
+		this.setWarCry("Woarg");
 		this.setNameBasicAttack("Coup d’Épée");
 		this.setNameSpecialAttack("Coup de Rage");
 	}

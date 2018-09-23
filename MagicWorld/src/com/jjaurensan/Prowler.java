@@ -4,7 +4,8 @@ public class Prowler extends GameCharacter {
 
 	public Prowler(Integer level, Integer force, Integer agility, Integer intelligence) {
 		super(level, force, agility, intelligence);
-		
+		this.setTypeCharacter("Rôdeur");
+		this.setWarCry("Ben qui veux-tu que ce soit ? Un ours en deltaplane ?!");
 		this.setNameBasicAttack("Tir à l’Arc");
 		this.setNameSpecialAttack("Concentration");
 	}
