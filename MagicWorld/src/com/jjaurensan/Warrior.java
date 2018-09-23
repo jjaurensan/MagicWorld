@@ -2,14 +2,20 @@ package com.jjaurensan;
 
 public class Warrior extends GameCharacter{
 
+	
+
 	public Warrior(Integer level, Integer force, Integer agility, Integer intelligence) {
 		super(level, force, agility, intelligence);
 		// TODO Auto-generated constructor stub
+		
+		this.setNameBasicAttack("Coup d’Épée");
+		this.setNameSpecialAttack("Coup de Rage");
 	}
 
 	@Override
 	public void basicAttack() {
 		// Coup d’Épée : Effectue des dommages égaux à la force du joueur sur l’adversaire.
+		
 		
 	}
 

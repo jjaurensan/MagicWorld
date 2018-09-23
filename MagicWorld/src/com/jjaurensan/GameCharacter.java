@@ -19,10 +19,27 @@ abstract class GameCharacter {
 		this.life=level*5;
 		
 	}
-		
+// Methodes d'attaques		
 	
-// Methodes d'attaques
+	private String nameBasicAttack;
+	private String nameSpecialAttack;
 	
+	public String getNameBasicAttack() {
+		return nameBasicAttack;
+	}
+
+	public void setNameBasicAttack(String nameBasicAttack) {
+		this.nameBasicAttack = nameBasicAttack;
+	}
+
+	public String getNameSpecialAttack() {
+		return nameSpecialAttack;
+	}
+
+	public void setNameSpecialAttack(String nameSpecialAttack) {
+		this.nameSpecialAttack = nameSpecialAttack;
+	}
+
 	public abstract void basicAttack();
 	
 	public abstract void specialAttack();

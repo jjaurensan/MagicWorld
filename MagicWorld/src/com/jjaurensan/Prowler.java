@@ -4,8 +4,11 @@ public class Prowler extends GameCharacter {
 
 	public Prowler(Integer level, Integer force, Integer agility, Integer intelligence) {
 		super(level, force, agility, intelligence);
+		
+		this.setNameBasicAttack("Tir à l’Arc");
+		this.setNameSpecialAttack("Concentration");
 	}
-
+		
 	@Override
 	public void basicAttack() {
 		// Tir à l’Arc : Effectue des dommages égaux à l’agilité du joueur sur l’adversaire.

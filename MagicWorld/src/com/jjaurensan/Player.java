@@ -3,6 +3,35 @@ package com.jjaurensan;
 import java.util.Scanner;
 
 public class Player {
+	private String playerName;
+	
+	
+	public void displayAvailableCharacterChoice() {
+		
+	}
+	public void askCharacteristicsCharacter() {
+		
+		/*
+		private int level; //Niveau : choisi par le joueur (min 1, max 100)
+		private int force; //Force : choisie par le joueur (min 0, max 100)
+		private int agility; //Agilité : choisie par le joueur (min 0, max 100)
+		private int intelligence; //Intelligence : choisie par le joueur (min 0, max 100)
+		*/
+	}
+
+	public void displayCharacterCreationConfirmation() {
+		//"CRI DE GUERRE" je suis le "TYPE PERSO" "JOUEUR" niveau XX je possede XX de vitalité, XX de force, XX d'agilité et XX d'intelligence !
+	}
+	
+	public String getPlayerName() {
+		return playerName;
+	}
+
+
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
+	};
+	
 // ---------- AVANT REMISE A ZERO ------------	
 	/*
 	Scanner sc = new Scanner(System.in);
@@ -50,4 +79,9 @@ public class Player {
 }	
 */	
 	// ---------- AVANT REMISE A ZERO ------------		
+	
+	
+	/*Le jeu commence par proposer au joueur 1 de choisir entre Guerrier, Rôdeur ou Mage.
+	Il doit ensuite choisir le niveau, la force, l’agilité et enfin l’intelligence de son personnage.*/
+	
 }
