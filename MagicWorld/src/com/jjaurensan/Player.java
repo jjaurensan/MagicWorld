@@ -7,6 +7,18 @@ public class Player {
 	private String playerName;
 	private Player enemy;
 	private GameCharacter playerCharacter;
+	/**
+	 * @return the playerCharacter
+	 */
+	public GameCharacter getPlayerCharacter() {
+		return playerCharacter;
+	}
+	/**
+	 * @param playerCharacter the playerCharacter to set
+	 */
+	public void setPlayerCharacter(GameCharacter playerCharacter) {
+		this.playerCharacter = playerCharacter;
+	}
 	private int playerLevel;
 	private int playerForce;
 	private int playerAgility;
@@ -126,9 +138,19 @@ public class Player {
 	}
 	
 	public void displayChooseAttack(Player enemy) {
-		this.enemy = enemy;
-		//"JOUEUR" ("LIFE") veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)
+		this.setEnemy(enemy);
+		int playerChoice;
+		System.out.println(this.playerName+" ("+this.playerCharacter.getLife()+" Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
+		do {
+			playerChoice = sc.nextInt();
+		} while (playerChoice<1||playerChoice>2 );		
+		if (playerChoice==1) {
+			this.playerCharacter.basicAttack(this);
+		} else {
+			this.playerCharacter.specialAttack(this);
+		}
 	}
+	
 	/**
 	 * Name of the player / Nom du joueur
 	 * @return the player name
@@ -143,6 +165,12 @@ public class Player {
 	 */
 	public void setPlayerName(String playerName) {
 		this.playerName = playerName;
+	}
+	public Player getEnemy() {
+		return enemy;
+	}
+	public void setEnemy(Player enemy) {
+		this.enemy = enemy;
 	};
 	
 	/*Le jeu commence par proposer au joueur 1 de choisir entre Guerrier, Rôdeur ou Mage.

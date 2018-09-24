@@ -27,11 +27,9 @@ abstract class GameCharacter {
 	
 	
 
-	public abstract void basicAttack();
+	public abstract void basicAttack(Player player);
+	public abstract void specialAttack(Player player);
 	
-	public abstract void specialAttack();
-
-
 
 	/**
 	 * @return the level
@@ -192,6 +190,7 @@ abstract class GameCharacter {
 	public void setNameSpecialAttack(String nameSpecialAttack) {
 		this.nameSpecialAttack = nameSpecialAttack;
 	}
-	
+
+
 
 }
