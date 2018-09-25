@@ -14,17 +14,24 @@ public class Warrior extends GameCharacter{
 	}
 
 	@Override
-	public int basicAttack() {
+	public void basicAttack(Player player) {
 		// Coup d’Épée : Effectue des dommages égaux à la force du joueur sur l’adversaire.
-		
+		player.getEnemy().getPlayerCharacter().setLife(player.getEnemy().getPlayerCharacter().getLife()-this.getForce());
+		System.out.println(player.getPlayerName()+" utilise "+this.getNameBasicAttack()+"et inflige "+ this.getForce()+" dommages");
+		System.out.println(player.getEnemy().getPlayerName()+" perd "+this.getForce()+" points de vie");
 		
 	}
 
 	@Override
-	public int specialAttack() {
+	public void specialAttack(Player player) {
 		// Coup de Rage : Effectue des dommages égaux à la force du joueur fois deux sur l’adversaire. 
 		//Le joueur lançant l'attaque perd de la vitalité : la valeur de sa force divisée par 2
 		
+		player.getEnemy().getPlayerCharacter().setLife(player.getEnemy().getPlayerCharacter().getLife()-(this.getForce()*2));
+		this.setLife(this.getLife()-(this.getForce()/2));
+		System.out.println(player.getPlayerName()+" utilise "+this.getNameBasicAttack()+"et inflige "+ this.getForce()*2+" dommages");
+		System.out.println(player.getEnemy().getPlayerName()+" perd "+this.getForce()+" points de vie");
+		System.out.println(player.getPlayerName()+" perd "+this.getForce()/2+" points de vie");
 	}
 
 	
