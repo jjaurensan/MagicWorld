@@ -10,8 +10,20 @@ public class Main {
 	playerTwo.setPlayerName("Joueur 2");
 	playerOne.createNewCharacter();
 	playerTwo.createNewCharacter();
-	playerOne.displayChooseAttack(playerTwo);
-	playerTwo.displayChooseAttack(playerOne);
+	
+	do {
+		playerOne.displayChooseAttack(playerTwo);
+		if (playerTwo.getPlayerCharacter().getLife()==0) {
+			System.out.println(playerTwo.getPlayerName()+" est mort");
+		}else
+		{
+			playerTwo.displayChooseAttack(playerOne);
+			if (playerOne.getPlayerCharacter().getLife()==0) {
+				System.out.println(playerOne.getPlayerName()+" est mort");
+			}
+		}	
+		
+	} while (playerOne.getPlayerCharacter().getLife()>0 && playerTwo.getPlayerCharacter().getLife()>0 );
 	
 	 }
 }

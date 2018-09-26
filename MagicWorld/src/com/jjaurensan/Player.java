@@ -28,7 +28,7 @@ public class Player {
 	 */
 	public void displayAvailableCharacterChoice() {
 		System.out.println("Création du personnage du "+ this.playerName 
-				+" /nVeuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
+				+" \r\nVeuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
 		}
 	/**
 	 * create a new player character
@@ -36,8 +36,8 @@ public class Player {
 	public void createNewCharacter() {
 		this.displayAvailableCharacterChoice();
 		int playerChoice;		
-		do {
-			playerChoice= sc.nextInt();	
+		do {			
+			playerChoice= sc.nextInt();
 		}					
 		while (playerChoice<1||playerChoice>3);
 		this.askCharacteristicsCharacter();			
@@ -45,20 +45,16 @@ public class Player {
 		switch (playerChoice) {
 			case 1:
 				this.playerCharacter = new Warrior(this.playerLevel, this.playerForce, this.playerAgility, this.playerIntelligence);
-				this.displayCharacterCreationConfirmation();
 				break;
 			case 2:
 				this.playerCharacter = new Prowler(this.playerLevel, this.playerForce, this.playerAgility, this.playerIntelligence);
-				this.displayCharacterCreationConfirmation();
 				break;	
 			case 3:
 				this.playerCharacter = new Wizard(this.playerLevel, this.playerForce, this.playerAgility, this.playerIntelligence);
-				this.displayCharacterCreationConfirmation();
 				break;
 						
 		}		
-		
-		
+		this.displayCharacterCreationConfirmation();		
 	}
 	
 	
@@ -133,14 +129,14 @@ public class Player {
 				+" je possede "+this.playerCharacter.getLife() +" de vitalité, "
 				+this.playerCharacter.getForce()+" de force, "
 				+this.playerCharacter.getAgility()+" d'agilité et "
-				+this.playerCharacter.getIntelligence()+" d'intelligence !";
+				+this.playerCharacter.getIntelligence()+" d'intelligence !\r\n" ;
 		System.out.println(creationConfirmation);
 	}
 	
 	public void displayChooseAttack(Player enemy) {
 		this.setEnemy(enemy);
 		int playerChoice;
-		System.out.println(this.playerName+" ("+this.playerCharacter.getLife()+" Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)");
+		System.out.println(this.playerName+" ("+this.playerCharacter.getLife()+" Vitalité) veuillez choisir votre action (1 : Attaque Basique, 2 : Attaque Spéciale)\r\n");
 		do {
 			playerChoice = sc.nextInt();
 		} while (playerChoice<1||playerChoice>2 );		
@@ -148,7 +144,7 @@ public class Player {
 			this.playerCharacter.basicAttack(this);
 		} else {
 			this.playerCharacter.specialAttack(this);
-		}
+		}		
 	}
 	
 	/**

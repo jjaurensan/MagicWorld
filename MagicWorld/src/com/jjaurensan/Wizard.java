@@ -41,7 +41,7 @@ public class Wizard extends GameCharacter{
 		} else {
 			this.setLife(this.getLife()+soin);			
 		}
-		System.out.println(player.getPlayerName()+" utilise "+this.getNameSpecialAttack()+"et gagne "+ soin +" en vitalité.");
+		System.out.println(player.getPlayerName()+" utilise "+this.getNameSpecialAttack()+" et gagne "+ soin +" en vitalité.");
 	}
 
 
