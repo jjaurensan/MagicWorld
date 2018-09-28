@@ -23,13 +23,8 @@ class PlayerTest {
     @AfterEach
     public void restoreStreams() {
         System.setOut(System.out);
-    }/*
-	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-	 @BeforeEach
-	    public void setUpStreams() {
-	        System.setOut(new PrintStream(outContent));
-	    }
-*/
+    }
+
 	Player player = new Player();
 	
 	@Test
@@ -50,12 +45,5 @@ class PlayerTest {
 		player.displayCharacterCreationConfirmation();
 		assertEquals("Avada Kedavra je suis le Mage test niveau 100 je possede 500 de vitalité, 0 de force, 0 d'agilité et 100 d'intelligence !", outContent.toString().replaceAll("[\r\n]+", ""));
 	}
-	@Test
-	public void Given_PlayerLeveThen_askLevel() {
-		System.setIn(new ByteArrayInputStream("55\n55\n0\n0\n".getBytes()));
-		player.askCharacteristicsCharacter();
-		
-		assertTrue(player.getPlayerLevel()==55);
-		
-	}
+	
 }

@@ -13,12 +13,13 @@ public class Main {
 	
 	do {
 		playerOne.displayChooseAttack(playerTwo);
-		if (playerTwo.getPlayerCharacter().getLife()==0) {
+		if (playerTwo.getPlayerCharacter().getLife()<=0) {
 			System.out.println(playerTwo.getPlayerName()+" est mort");
 		}else
 		{
-			playerTwo.displayChooseAttack(playerOne);
-			if (playerOne.getPlayerCharacter().getLife()==0) {
+			if (playerOne.getPlayerCharacter().getLife()!=0) {
+				playerTwo.displayChooseAttack(playerOne);
+			}else {
 				System.out.println(playerOne.getPlayerName()+" est mort");
 			}
 		}	
