@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ProwlerTest {
+class WizardTest {
 
 	Player playerOne = new Player();
 	Player playerTwo = new Player();
@@ -16,8 +16,8 @@ class ProwlerTest {
 		playerOne.setPlayerName("attaque");
 		playerTwo.setPlayerName("defense");
 		
-		GameCharacter characterTest = new Prowler(100, 0, 100, 0);			
-		GameCharacter ennemyTest=new Prowler(100, 0, 100, 0);
+		GameCharacter characterTest = new Wizard(100, 0, 0, 100);			
+		GameCharacter ennemyTest=new Wizard(100, 0, 0, 100);
 		
 		playerOne.setPlayerCharacter(characterTest);
 		
@@ -40,7 +40,7 @@ class ProwlerTest {
 		
 		playerOne.getPlayerCharacter().specialAttack(playerOne);		
 		
-		assertTrue(playerOne.getPlayerCharacter().getAgility() == 150);
+		assertTrue(playerOne.getPlayerCharacter().getLife() == 500);
 	}
 
 }

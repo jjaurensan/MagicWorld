@@ -16,9 +16,9 @@ public class Warrior extends GameCharacter{
 	@Override
 	public void basicAttack(Player player) {
 		// Coup d’Épée : Effectue des dommages égaux à la force du joueur sur l’adversaire.
-		player.getEnemy().getPlayerCharacter().setLife(player.getEnemy().getPlayerCharacter().getLife()-this.getForce()*2);
-		System.out.println(player.getPlayerName()+" utilise "+this.getNameBasicAttack()+"et inflige "+ this.getForce()+" dommages");
-		System.out.println(player.getEnemy().getPlayerName()+" perd "+this.getForce()*2+" points de vie");
+		player.getEnemy().getPlayerCharacter().setLife(player.getEnemy().getPlayerCharacter().getLife()-this.getForce());
+		System.out.println(player.getPlayerName()+" utilise "+this.getNameBasicAttack()+" et inflige "+ this.getForce()+" dommages");
+		System.out.println(player.getEnemy().getPlayerName()+" perd "+this.getForce()+" points de vie");
 		
 	}
 
@@ -29,8 +29,8 @@ public class Warrior extends GameCharacter{
 		
 		player.getEnemy().getPlayerCharacter().setLife(player.getEnemy().getPlayerCharacter().getLife()-(this.getForce()*2));
 		this.setLife(this.getLife()-(this.getForce()/2));
-		System.out.println(player.getPlayerName()+" utilise "+this.getNameBasicAttack()+"et inflige "+ this.getForce()*2+" dommages");
-		System.out.println(player.getEnemy().getPlayerName()+" perd "+this.getForce()+" points de vie");
+		System.out.println(player.getPlayerName()+" utilise "+this.getNameSpecialAttack()+" et inflige "+ this.getForce()*2+" dommages");
+		System.out.println(player.getEnemy().getPlayerName()+" perd "+this.getForce()*2+" points de vie");
 		System.out.println(player.getPlayerName()+" perd "+this.getForce()/2+" points de vie");
 	}
 

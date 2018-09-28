@@ -28,7 +28,7 @@ public class Player {
 	 */
 	public void displayAvailableCharacterChoice() {
 		System.out.println("Création du personnage du "+ this.playerName 
-				+" \r\nVeuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
+				+" Veuillez choisir la classe de votre personnage (1 : Guerrier, 2 : Rôdeur, 3 : Mage)");
 		}
 	/**
 	 * create a new player character
@@ -167,6 +167,30 @@ public class Player {
 	}
 	public void setEnemy(Player enemy) {
 		this.enemy = enemy;
+	}
+	/**
+	 * @return the playerLevel
+	 */
+	public int getPlayerLevel() {
+		return playerLevel;
+	}
+	/**
+	 * @return the playerForce
+	 */
+	public int getPlayerForce() {
+		return playerForce;
+	}
+	/**
+	 * @return the playerAgility
+	 */
+	public int getPlayerAgility() {
+		return playerAgility;
+	}
+	/**
+	 * @return the playerIntelligence
+	 */
+	public int getPlayerIntelligence() {
+		return playerIntelligence;
 	};
 	
 	/*Le jeu commence par proposer au joueur 1 de choisir entre Guerrier, Rôdeur ou Mage.
